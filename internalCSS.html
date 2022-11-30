@@ -2,23 +2,44 @@
 <html>
   <head>
     <title>Internal CSS</title>
+    <style>
+  .careerObjectives{ color: blueviolet; text-transform: capitalize; font-weight: bold;}
+  /* #myId{color: brown; font-size: larger; } */
+   /* #debug {color: blue; font-size: xx-large;} */
+
+   h2,h3,#myId{ color: rgb(27, 212, 212);}
+   h2 {text-align: center;}
+  </style>
   </head>
   <body>
     <h2>Career Objectives</h2>
-    <hr />
-    <p>
-      <strong> Seeking </strong> a <b> challenging</b> and
-      <u> rewarding career </u>in a reputed organization where my
-      <mark> technical skills </mark>would make &nbsp; &nbsp; &nbsp; a positive
+    <hr/>
+    <p id="myId">
+      <strong> Seeking </strong> a  challenging and
+      rewarding career in a reputed organization where my
+       technical skills would make  a positive
       contribution to the organization <br />
-      and <small>guide me </small> in building a rewardingcareer at the same
-      time enhancing my knowledge of <i> industry wide processes. </i>
+      and guide me  in building a rewardingcareer at the same
+      time enhancing my knowledge of  industry wide processes. 
     </p>
-    <hr />
-    <h2>Professional Summary</h2>
+    <hr/>
+    <h2>Career Objectives</h2>
+    
+    <p class="careerObjectives">
+      <strong> Seeking </strong> a  challenging and
+      rewarding career in a reputed organization where my
+       technical skills would make  a positive
+      contribution to the organization <br />
+      and guide me  in building a rewardingcareer at the same
+      time enhancing my knowledge of  industry wide processes. 
+    </p>
+    <hr>
+    <h2 class="careerObjectives">Professional Summary</h2>
+    <!-- this is important session for resume writing -->
+    <h3>Summary</h3>
     <p>
       &nbsp; &nbsp; &nbsp; &nbsp; Experience in using Chrome Developer Tool for
-      debugging and Troubleshooting the code <br />&nbsp; &nbsp; &nbsp; &nbsp;
+      <span id="debug">debugging and Troubleshooting</span> the code <br />&nbsp; &nbsp; &nbsp; &nbsp;
       Knowledge of NodeJS <br />&nbsp; &nbsp; &nbsp; &nbsp; Ability to work with
       people at all levels in the program
     </p>
