@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      label {
+        color: cadetblue;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        color: cadetblue;
+        border-radius: 10px;
+        border: 1px solid orangered;
+        width: 220px;
+        height: 20px;
+        text-transform: capitalize;
+      }
+      input[type="email"],
+      input[type="date"],
+      input[type="week"],
+      input[type="time"] input[type="password"],
+      input[type="file"],
+      input[type="password"],
+      input[type="time"],
+      select {
+        color: cadetblue;
+        border-radius: 10px;
+        border: 1px solid orangered;
+        width: 220px;
+        height: 20px;
+        text-transform: capitalize;
+      }
+      textarea {
+        color: cadetblue;
+        border-radius: 10px;
+        border: 1px solid orangered;
+        width: 220px;
+        height: 100px;
+        text-transform: capitalize;
+      }
+      input[type="radio"] {
+        color: orangered;
+      }
+
+      button:hover {
+        background-color: rgb(197, 112, 9);
+      }
+      button[type="submit"] {
+        border-radius: 10px;
+        color: mediumvioletred;
+        width: 80px;
+        height: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkorange;
+      }
+      button[type="reset"] {
+        border-radius: 15px;
+        color: blue;
+        width: 80px;
+        height: 25px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: darkorange;
+      }
+      input[type="Submit"],
+      input[type="Reset"] {
+        border-radius: 15px;
+        color: blue;
+        width: 80px;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Student Registration Form</h3>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Capital letters please"
+                required
+                autofocus
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Last Name</label></td>
+            <td><input type="text" maxlength="6" /></td>
+          </tr>
+          <tr>
+            <td><label>Mobile</label></td>
+            <td><input type="number" placeholder="max 10 digits" /></td>
+          </tr>
+          <tr>
+            <td><label>Email ID</label></td>
+            <td><input type="email" placeholder="abc@gmail.com" /></td>
+          </tr>
+          <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td><label>Date of birth</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label>Available in week</label></td>
+            <td><input type="week" /></td>
+          </tr>
+          <tr>
+            <td><label>Available in time</label></td>
+            <td><input type="time" /></td>
+          </tr>
+          <tr>
+            <td><label>Profile Photo</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><label>Upload Graduation Mark sheets</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+          <tr>
+            <td>
+              <label>Graduation</label>
+            </td>
+            <td>
+              <select>
+                <option>BE</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>BSC</option>
+                <option>MSC</option>
+                <option>BCS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Gender</label></td>
+            <td>
+              <input type="radio" name="gender" /><label>Male</label>
+              <input type="radio" name="gender" /><label>Female</label>
+              <input type="radio" name="gender" /><label>Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Training</label></td>
+            <td>
+              <input type="checkbox" /><label>Angular</label>
+              <input type="checkbox" /><label>React</label>
+              <input type="checkbox" /><label>Java</label>
+              <input type="checkbox" /><label>.Net</label>
+              <input type="checkbox" /><label>Data Science</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Age</label></td>
+            <td><input type="number" placeholder="only numbers" /></td>
+          </tr>
+          <tr>
+            <td><label>State</label></td>
+            <td><input type="Text" value="MH" readonly /></td>
+          </tr>
+          <tr>
+            <td><label>Country</label></td>
+            <td><input type="Text" value="India" disabled /></td>
+          </tr>
+          <tr>
+            <td><label>Present Address</label></td>
+            <td><textarea rows="7" cols="40"></textarea></td>
+          </tr>
+          <tr>
+            <td><input type="Submit" /></td>
+            <td><input type="Reset" /></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Register</button></td>
+            <td><button type="reset">Clear all</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
